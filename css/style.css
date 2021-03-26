@@ -3,13 +3,64 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.container{
+    height: 100vh;
+    background-image: url("https://i.pinimg.com/originals/2c/c1/3e/2cc13e6422218aa521474b36346b85f9.jpg");
+}
 #root{
     width: 70%;
     margin: auto;
-    margin-top: 100px;
+    padding-top: 100px;
+    text-align: center;
 }
 
+.wrapper{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+    background-image: url("https://www.modulgrouparredamenti.com/images/prodotti/186-30-03-banco-frutta-verdura.JPG");
+    background-size: cover;
+}
+
+.wrapper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    transition: all 2s;
+    text-align: center;
+}
+
+.wrapper:hover img{
+    top: -500px;
+}
+
+input{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 span{
     cursor: pointer;
+}
+
+ol{    
+    list-style: none;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+ol li{
+    padding: 10px 0;
+    color: white;
+}
+
+i {
+    font-size: 20px;
 }

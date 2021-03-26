@@ -2,7 +2,7 @@ var app = new Vue(
     {
        el: "#root" ,
        data: {
-           elementi: ["latte", "uova", "pane"],
+           elementi: ["latte", "uova", "pane", "pasta", "birra"],
            newItem: ""
        },
        methods:{
