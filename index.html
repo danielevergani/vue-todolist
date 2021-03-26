@@ -12,8 +12,10 @@
     <body>
 
         <div id="root">
+            <input type="text" v-model="newItem">
+            <button @click="addElem">aggiungi</button>
             <ol v-if="elementi.length>0">
-                <li v-for="item in elementi"> comprare {{item}} <span>X</span></li>
+                <li v-for="(item, index) in elementi"> comprare {{item}} <span @click="removeElem(index)">X</span></li>
             </ol>
 
         </div>
